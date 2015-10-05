@@ -14,3 +14,31 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.my-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  text-align:center;
+}
+
+.responsive-image {
+  width: 100%;
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+
+}
