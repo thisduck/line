@@ -27,5 +27,5 @@ Line.PhotoViewComponent = Ember.Component.extend
 
   url: (->
     console.log @get('width')
-    @get "photo.image.size_1500.url"
+    @get "photo.image.size_1000.url"
   ).property('width', 'photo')
