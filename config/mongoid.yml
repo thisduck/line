@@ -133,3 +133,10 @@ test:
         read:
           mode: primary
         max_pool_size: 1
+
+production:
+  clients:
+    default:
+      database: line_production
+      hosts:
+        - localhost:27017
