@@ -3,5 +3,6 @@ Line.Photo = DS.Model.extend
   image: DS.attr()
   next_id: DS.attr('string')
   previous_id: DS.attr('string')
+  preloads: DS.attr()
   
 

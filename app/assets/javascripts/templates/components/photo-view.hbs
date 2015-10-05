@@ -2,3 +2,6 @@
   <div class="responsive-image" style="background-image:url('{{url}}');" />
 </div>
 
+{{#each photo.preloads as |load|}}
+  <img src="{{load.size_1500.url}}" style="display: none;" />
+{{/each}}
