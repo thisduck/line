@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'home#index'
+  root 'home#index'
+
+  get '/api/volumes/:id', to: 'volumes#show'
   get '/api/photos/:id', to: 'photos#show'
   get '*path', to: 'home#index'
 

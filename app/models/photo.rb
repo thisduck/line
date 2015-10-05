@@ -16,11 +16,11 @@ class Photo
     json
   end
 
-	def previous(limit = 1)
-		self.class.where(:position.lt => self.position).order_by([[:position, :desc]]).limit(limit).all
-	end
+  def previous(limit = 1)
+    self.class.where(:position.lt => self.position).order_by([[:position, :desc]]).limit(limit).all
+  end
 
-	def next(limit = 1)
-		self.class.where(:position.gt => self.position).order_by([[:position, :asc]]).limit(limit).all
-	end
+  def next(limit = 1)
+    self.class.where(:position.gt => self.position).order_by([[:position, :asc]]).limit(limit).all
+  end
 end

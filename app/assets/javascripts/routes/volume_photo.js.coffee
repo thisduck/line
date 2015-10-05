@@ -14,7 +14,6 @@ Line.VolumePhotoRoute = Ember.Route.extend
         @transitionTo('volume.photo', id)
 
   # afterModel: () ->
-  #   debugger
   #   console.log 'tjing'
 
 
