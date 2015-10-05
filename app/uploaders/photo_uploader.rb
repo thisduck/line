@@ -48,13 +48,13 @@ class PhotoUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
 
-#   version :size_3000 do
-#     process resize_to_fit: [3000,3000]
-#   end
+  version :size_3000 do
+    process resize_to_fit: [3000,3000]
+  end
 
-#   version :size_2000 do
-#     process resize_to_fit: [2000,2000]
-#   end
+  version :size_2000 do
+    process resize_to_fit: [2000,2000]
+  end
 
   version :size_1500 do
     process resize_to_fit: [1500,1500]
